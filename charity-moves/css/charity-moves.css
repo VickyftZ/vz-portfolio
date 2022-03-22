@@ -483,6 +483,35 @@ p {
     font-size: 12px;
 }
 
+/* back-to-top button */
+button > i {
+    color: white;
+}
+#topBtn {
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    font-size: 24px;
+    padding: 5px 10px;
+    background-color: #FF9A86;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s ease-out;
+    box-shadow: 5px 5px 10px #ffb4a5;
+}
+#topBtnText {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+}
+#topBtn:active {
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
 /* media query */
 @media screen and (min-width: 1513px) {
     .autohide img {
@@ -494,6 +523,7 @@ p {
         background-position: center;
         margin-top: 20px;
     }
+    
 }
 @media screen and (max-width: 1512px) and (min-width: 992px) {
     .autohide img {
@@ -645,6 +675,9 @@ p {
         .ms-3 {
             margin-left: 0 !important;
             margin-right: 15px;
+        }
+        .btn-floating {
+            display: none !important;
         }
 
         /* Font-size change */
